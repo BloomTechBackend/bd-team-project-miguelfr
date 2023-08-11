@@ -4,8 +4,8 @@
 
 ## 1. Problem Statement
 
-*Learn and Be Curious Projects Repository (LBCPR) is a service that permit to save past LBC projects so that future students
-can check it and be inspired for their own projects ideas.*
+*Learn and Be Curious Projects Repository (LBCPR) is a service to save past LBC projects so future students
+can check and be inspired for their own projects ideas.*
 
 
 ## 2. Top Questions to Resolve in Review
@@ -18,7 +18,7 @@ have a dev1, dev2, dev3 and dev4 fields in the table team ?
 
 ## 3. Use Cases
 
-U1. *As a [LBCPR] user, I want to be able to register my project with a title, course, year, description, 
+U1. *As a [LBCPR] user, I want to be able to register a project with a title, course, year, description, git url,
 and the dev team(name, List of members)*
 U2. *As a [LBCPR] user, I want to be able to update a project.*
 U3. *As a [LBCPR] user, I want to view a list of all past LBC projects when I access the service.*
@@ -59,6 +59,7 @@ String id;
 String title;
 String description;
 String course;
+String git_url;
 Integer year;
 String teamId;
 
@@ -95,6 +96,7 @@ id          // partition key, string
 title       // string
 description // string
 course      // string
+git_ural    // string
 year        // number
 teamId      // string
 
