@@ -1,43 +1,43 @@
 # [MiguelFR] Design Document
 
-## *LBC Projects Repository* Design
+## * LBC Projects Repository * Design
 
 ## 1. Problem Statement
 
-*Learn and Be Curious Projects Repository (LBCPR) is a service to save past LBC projects so future students
+* Learn and Be Curious Projects Repository (LBCPR) is a service to save past LBC projects so future students
 can check and be inspired for their own projects ideas.*
 
 
 ## 2. Top Questions to Resolve in Review
 
 1. Should I have a table developer and relate it with the table team and the table team to table project or should just
-have a dev1, dev2, dev3 and dev4 fields in the table team ?  
+have a list of members in the table team ?  
 2. Should the dev have the information about their course or should it be in the project ?  
 3. Should the projects table have fields for beginning and end date of the projects ? Will I be able to deal with date fields ?
 4. In the table Project should the title of the project be the primary key or use id ?
 
 ## 3. Use Cases
 
-U1. *As a [LBCPR] user, I want to be able to register a project with a title, course, year, description, git url,
+U1. * As a [LBCPR] user, I want to be able to register a project with a title, course, year, description, git url,
 and the dev team(name, List of members)*
-U2. *As a [LBCPR] user, I want to be able to update a project.*
-U3. *As a [LBCPR] user, I want to view a list of all past LBC projects when I access the service.*
-U4. *As a [LBCPR] user, I want to select a project from the list of all project to view all details of the project.*
+U2. * As a [LBCPR] user, I want to be able to update a project.*
+U3. * As a [LBCPR] user, I want to view a list of all past LBC projects when I access the service.*
+U4. * As a [LBCPR] user, I want to select a project from the list to view more details of the project.*
 
 ## 4. Project Scope
 
 ### 4.1. In Scope
 
-*Create a project.
-*List all projects.
-*Update a project.
+* Create a project.
+* List all projects.
+* Update a project.
 
 ### 4.2. Out of Scope
 
-*Search a project by any specific field.
-*Manage a team or devs.
-*Manage courses.
-*Delete projects.
+* Search a project by any specific field.
+* Manage a team.
+* Manage courses.
+* Delete operations.
 
 # 5. Proposed Architecture Overview
 
@@ -47,8 +47,8 @@ We will use the API Gateway and Lambda to create four endpoints (GetAllProjects,
 
 Projects and Teams will be stored in separated tables in DynamoDB.
 
-We will provide a web interface for users to interact with the service, creating, updating and view the list of all
-projects and select specific project in the list to vie more details. 
+We will provide a web interface to create a project, view the list of all
+projects, select a project in the list to view more and update any information. 
 
 # 6. API
 
@@ -59,7 +59,7 @@ String id;
 String title;
 String description;
 String course;
-String git_url;
+String gitUrl;
 Integer year;
 String teamId;
 
@@ -69,18 +69,10 @@ String name;
 List<String> members;
 
 
-## 6.2. *First Endpoint*
+## 6.2. * GetAllProjects *
 
-*Describe the behavior of the first endpoint you will build into your service
-API. This should include what data it requires, what data it returns, and how it
-will handle any known failure cases. You should also include a sequence diagram
-showing how a user interaction goes from user to website to service to database,
-and back. This first endpoint can serve as a template for subsequent endpoints.
-(If there is a significant difference on a subsequent endpoint, review that with
-your team before building it!)*
-
-*(You should have a separate section for each of the endpoints you are expecting
-to build...)*
+* Accepts GET requests to /projects and returns the list of all projects.
+    * if there is no project in the database return an empty list.
 
 ## 6.3 *Second Endpoint*
 
@@ -96,7 +88,7 @@ id          // partition key, string
 title       // string
 description // string
 course      // string
-git_ural    // string
+gitUrl      // string
 year        // number
 teamId      // string
 
