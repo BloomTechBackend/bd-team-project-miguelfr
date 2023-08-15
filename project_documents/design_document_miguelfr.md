@@ -1,6 +1,6 @@
-# [MiguelFR] Design Document
+# MiguelFR Design Document
 
-## * LBC Projects Repository * Design
+## LBC Projects Repository Design
 
 ## 1. Problem Statement
 
@@ -76,6 +76,8 @@ List<String> members;
 
 * Accepts GET requests to /projects and returns the list of all projects.
     * if there is no project in the database return an empty list.
+    
+(images/getAllProjectsSD.png)
 
 ## 6.3 Get Project Endpoint
 

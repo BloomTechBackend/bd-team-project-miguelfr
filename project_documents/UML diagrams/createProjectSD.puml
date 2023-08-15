@@ -1,0 +1,13 @@
+@startuml
+actor Client
+participant website
+participant CreateProjectActivity
+database projects
+
+Client -> website: submit create project form
+website -> CreateProjectActivity: send save projects request
+CreateProjectActivity -> projects: save project
+CreateProjectActivity <-- projects: return project
+website <-- CreateProjectActivity: return project
+Client <-- website: present 200 response
+@enduml

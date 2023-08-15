@@ -1,13 +1,13 @@
 @startuml
 actor Client
-participant "website main page"
+participant website
 participant GetAllProjectsActivity
 database projects
 
-Client -> "website main page": access the website
-"website main page" -> GetAllProjectsActivity: send get all projects request
+Client -> website: access the website main page
+website -> GetAllProjectsActivity: send get all projects request
 GetAllProjectsActivity -> projects: load all projects
 GetAllProjectsActivity <-- projects: all projects
-"website main page" <-- GetAllProjectsActivity: List<ProjectModel>
-Client <-- "website main page": present a list of all projects
+website <-- GetAllProjectsActivity: List<ProjectModel>
+Client <-- website: present a list of all projects
 @enduml

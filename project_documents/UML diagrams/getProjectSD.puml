@@ -1,0 +1,13 @@
+@startuml
+actor Client
+participant website
+participant GetProjectActivity
+database projects
+
+Client -> website: select a project to view more
+website -> GetProjectActivity: send get project request
+GetProjectActivity -> projects: load project
+GetProjectActivity <-- projects: project
+"website main page" <-- GetProjectActivity: ProjectModel
+Client <-- website: present the project
+@enduml
