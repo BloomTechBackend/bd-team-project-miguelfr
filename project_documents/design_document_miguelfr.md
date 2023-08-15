@@ -77,33 +77,36 @@ List<String> members;
 * Accepts GET requests to /projects and returns the list of all projects.
     * if there is no project in the database return an empty list.
     
-![](images/getAllProjectsSD.png)
+![Get all projects SD](images/getAllProjectsSD.png)
 
 ## 6.3 Get Project Endpoint
 
 * Accepts GET requests to /projects/:id
 * Accepts a project ID and returns the corresponding ProjectModel.
     * if there is no project with that ID, a ProjectNotFoundException will be thrown.
-  
+![Get a project SD](images/getProjectSD.png)
+
 ## 6.4 Update Project Endpoint
 
 * Accepts PUT requests to /projects/:id
 * Accepts data (ID, title, description, gitUrl and team name) to update the project with that ID. 
 Returns the updated Project.
     * if there is no project with that ID, will throw a ProjectNotFoundException
+![Update a projects SD](images/updateProjectSD.png)
 
 ## 6.5 Create Project Endpoint
 
 * Accepts POST requests to /projects
 * Accepts data (title, description, gitUrl, team name and a list of team members) to create a new project.
   Returns the new Project, including a unique project ID assigned by the LBC-PR service.
+![Create a project SD](images/createProjectSD.png)
 
 # 7. Tables
 
 ## 7.1. projects
-id          // partition key, string
-title       // string
-description // string
+*id          // partition key, string*
+*title       // string*
+*description // string*
 course      // string
 gitUrl      // string
 year        // number
@@ -116,10 +119,4 @@ members // list
 
 # 8. Pages
 
-*Include mock-ups of the web pages you expect to build. These can be as
-sophisticated as mockups/wireframes using drawing software, or as simple as
-hand-drawn pictures that represent the key customer-facing components of the
-pages. It should be clear what the interactions will be on the page, especially
-where customers enter and submit data. You may want to accompany the mockups
-with some description of behaviors of the page (e.g. “When customer submits the
-submit-dog-photo button, the customer is sent to the doggie detail page”)*
+![Pages](images/pages.png)
