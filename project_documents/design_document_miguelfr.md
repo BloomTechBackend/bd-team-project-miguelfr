@@ -17,9 +17,9 @@ can check and be inspired for their own projects ideas.
 ## 3. Use Cases
 
 U1. As a [LBCPR] user, I want to be able to register a project with a title, course, year, description, git url,
-and the dev team(name, List of members).
-U2. As a [LBCPR] user, I want to view a list of all past LBC projects when I access the service.
-U3. As a [LBCPR] user, I want to select a project from the list to view more details of the project.
+and the dev team(name, List of members).  <br>
+U2. As a [LBCPR] user, I want to view a list of all past LBC projects when I access the service.  <br>
+U3. As a [LBCPR] user, I want to select a project from the list to view more details of the project.  <br>
 U4. As a [LBCPR] user, I want to be able to update the: title, description, gitUrl, the team and devs names.
 
 
