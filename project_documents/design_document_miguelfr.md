@@ -13,6 +13,7 @@ can check and be inspired for their own projects ideas.
 1. In the table "project", should the title of the project be the primary key or should I use an id ?  
 2. Should I use date for beginning and end date of the projects ? Will I be able to deal with date fields ?
 3. Should I use combo-box for the course ? Will I be able to deal with combo-box ?
+4. Should I use a list for the team members ? or use dev1, dev2, dev3 and dev4 strings ?
 
 ## 3. Use Cases
 
@@ -100,16 +101,16 @@ Returns the updated Project.
 ## 7.1. projects
 id          // partition key, string  
 title       // string  
-* description // string
-* course      // string 
-* gitUrl      // string
-* year        // number
-* teamId      // string
+description // string   
+course      // string   
+gitUrl      // string  
+year        // number  
+teamId      // string  
 
 ## 7.2 teams
-* id      // partition key, string
-* name    // string
-* members // list
+id      // partition key, string  
+name    // string  
+members // list  
 
 # 8. Pages
 
