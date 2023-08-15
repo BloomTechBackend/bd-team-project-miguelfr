@@ -57,19 +57,19 @@ projects, select a project in the list to view more and update some information:
 
 // ProjectModel
 
-String id;
-String title;
-String description;
-String course;
-String gitUrl;
-Integer year;
-String teamId;
+* String id; *
+* String title; *
+* String description; *
+* String course; *
+* String gitUrl; *
+* Integer year; *
+* String teamId; *
 
 // TeamModel
 
-String id;
-String name;
-List<String> members;
+* String id;
+* String name;
+* List<String> members;
 
 
 ## 6.2. Get AllProjects Endpoint
