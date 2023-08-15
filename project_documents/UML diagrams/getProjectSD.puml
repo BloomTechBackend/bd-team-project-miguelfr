@@ -8,6 +8,6 @@ Client -> website: select a project to view more
 website -> GetProjectActivity: send get project request
 GetProjectActivity -> projects: load project
 GetProjectActivity <-- projects: project
-"website main page" <-- GetProjectActivity: ProjectModel
+website <-- GetProjectActivity: ProjectModel
 Client <-- website: present the project
 @enduml

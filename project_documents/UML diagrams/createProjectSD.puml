@@ -7,7 +7,7 @@ database projects
 Client -> website: submit create project form
 website -> CreateProjectActivity: send save projects request
 CreateProjectActivity -> projects: save project
-CreateProjectActivity <-- projects: return project
-website <-- CreateProjectActivity: return project
-Client <-- website: present 200 response
+CreateProjectActivity <-- projects: all projects
+website <-- CreateProjectActivity: List<ProjectModel>
+Client <-- website: present a list of all projects
 @enduml

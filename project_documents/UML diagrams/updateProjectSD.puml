@@ -5,9 +5,9 @@ participant UpdateProjectActivity
 database projects
 
 Client -> website: submit update form
-website -> UpdateProjectActivity: send update projects request
+website -> UpdateProjectActivity: send update project request
 UpdateProjectActivity -> projects: save updates
-UpdateProjectActivity <-- projects: return 200 response
-website <-- UpdateProjectActivity: return 200 response
-Client <-- website: return 200 response
+UpdateProjectActivity <-- projects: all projects
+website <-- UpdateProjectActivity: List<ProjectModel>
+Client <-- website: present a list of all projects
 @enduml

@@ -104,18 +104,18 @@ Returns the updated Project.
 # 7. Tables
 
 ## 7.1. projects
-*id          // partition key, string*
-*title       // string*
-*description // string*
-course      // string \br
-gitUrl      // string
-year        // number
-teamId      // string
+* id          // partition key, string
+* title       // string
+* description // string
+* course      // string 
+* gitUrl      // string
+* year        // number
+* teamId      // string
 
 ## 7.2 teams
-id      // partition key, string
-name    // string
-members // list
+* id      // partition key, string
+* name    // string
+* members // list
 
 # 8. Pages
 
