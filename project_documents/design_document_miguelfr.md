@@ -107,7 +107,7 @@ Returns the updated Project.
 *id          // partition key, string*
 *title       // string*
 *description // string*
-course      // string
+course      // string \br
 gitUrl      // string
 year        // number
 teamId      // string
