@@ -10,11 +10,9 @@ can check and be inspired for their own projects ideas.
 
 ## 2. Top Questions to Resolve in Review
 
-1. Should I have a table developer and relate it with the table team and the table team to table project or should just
-have a list of members in the table team ?  
-2. Should the dev have the information about their course or should it be in the project ?  
-3. Should the projects table have fields for beginning and end date of the projects ? Will I be able to deal with date fields ?
-4. In the table Project should the title of the project be the primary key or use id ?
+1. In the table "project", should the title of the project be the primary key or should I use an id ?  
+2. Should I use date for beginning and end date of the projects ? Will I be able to deal with date fields ?
+3. Should I use combo-box for the course ? Will I be able to deal with combo-box ?
 
 ## 3. Use Cases
 
@@ -22,7 +20,7 @@ U1. As a [LBCPR] user, I want to be able to register a project with a title, cou
 and the dev team(name, List of members).
 U2. As a [LBCPR] user, I want to view a list of all past LBC projects when I access the service.
 U3. As a [LBCPR] user, I want to select a project from the list to view more details of the project.
-U4. As a [LBCPR] user, I want to be able to update the: title, description, gitUrl and team name of a project.
+U4. As a [LBCPR] user, I want to be able to update the: title, description, gitUrl, the team and devs names.
 
 
 ## 4. Project Scope
@@ -48,8 +46,8 @@ U4. As a [LBCPR] user, I want to be able to update the: title, description, gitU
 
 * Projects and Teams will be stored in separated tables in DynamoDB.
 
-* We will provide a web interface to create a project, view the list of all
-projects, select a project in the list to view more and update some information: title, description, gitUrl and team name. 
+* We will provide a web interface to create, view, update and list of all
+projects. 
 
 # 6. API
 
@@ -57,13 +55,13 @@ projects, select a project in the list to view more and update some information:
 
 // ProjectModel
 
-* String id; *
-* String title; *
-* String description; *
-* String course; *
-* String gitUrl; *
-* Integer year; *
-* String teamId; *
+* String id;
+* String title;
+* String description;
+* String course;
+* String gitUrl;
+* Integer year;
+* String teamId;
 
 // TeamModel
 
