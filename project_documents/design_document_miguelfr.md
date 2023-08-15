@@ -40,10 +40,10 @@ U4. As a [LBCPR] user, I want to be able to update the: title, description, gitU
 
 # 5. Proposed Architecture Overview
 
-This service will provide the functionalities to create, update and list all the projects.  <br>
-We will use the API Gateway and Lambda to create four endpoints (GetAllProjects, GetProject, UpdateProject, CreateProject). <br>
-Projects and Teams will be stored in separated tables in DynamoDB.  <br>
-We will provide a web interface to create, view, update and list of all projects. 
+* This service will provide the functionalities to create, update and list all the projects.
+* We will use the API Gateway and Lambda to create four endpoints (GetAllProjects, GetProject, UpdateProject, CreateProject).
+* Projects and Teams will be stored in separated tables in DynamoDB. 
+* We will provide a web interface to create, view, update and list of all projects. 
 
 # 6. API
 
@@ -61,9 +61,9 @@ String teamId;
 
 // TeamModel
 
-* String id;
-* String name;
-* List<String> members;
+String id;  
+String name;  
+List<String> members;  
 
 
 ## 6.2. Get AllProjects Endpoint
@@ -98,8 +98,8 @@ Returns the updated Project.
 # 7. Tables
 
 ## 7.1. projects
-* id          // partition key, string
-* title       // string
+id          // partition key, string  
+title       // string  
 * description // string
 * course      // string 
 * gitUrl      // string
