@@ -57,6 +57,7 @@ String title;
 String description;  
 String course;  
 String gitUrl;  
+String websiteUrl;  
 Integer year;  
 String teamId;  
 
