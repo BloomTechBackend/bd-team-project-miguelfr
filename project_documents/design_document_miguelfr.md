@@ -105,6 +105,7 @@ title       // string
 description // string   
 course      // string   
 gitUrl      // string  
+websiteUrl  // string  
 year        // number  
 teamId      // string  
 
