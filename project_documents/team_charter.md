@@ -1,4 +1,4 @@
-# [team name] Team Charter
+# MiguelFR Team Charter
 
 ## Instructions
 
@@ -33,12 +33,12 @@ These resources may be helpful as you fill out your team charter. They are optio
 
 ### Administrative Information:
 
-|Name            |Preferred Contact Method (Zoom, Slack, email, etc.) |
-|---	           |---                                           |
-|Team Member (a) |                                              |
-|Team Member (b) |                                              |
-|Team Member (c) |                                              |
-|Team Member (d) |                                              |
+|Name            | Preferred Contact Method (Zoom, Slack, email, etc.) |
+|---	           |-----------------------------------------------------|
+|Miguel Francisco (a) | miguelarcanjo03@gmail.com                           |
+|Team Member (b) |                                                     |
+|Team Member (c) |                                                     |
+|Team Member (d) |                                                     |
 
 ### Psychological safety
 
