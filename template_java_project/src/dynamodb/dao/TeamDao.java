@@ -4,9 +4,12 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import dynamodb.models.Team;
 import exceptions.TeamNotFoundException;
 
+import javax.inject.Inject;
+
 public class TeamDao {
     private final DynamoDBMapper dynamoDBMapper;
 
+    @Inject
     public TeamDao(DynamoDBMapper dynamoDBMapper) {
         this.dynamoDBMapper = dynamoDBMapper;
     }

@@ -36,6 +36,38 @@ public class ProjectModel {
         this.teamId = project.getTeamId();
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public String getGitUrl() {
+        return gitUrl;
+    }
+
+    public String getWebsiteUrl() {
+        return websiteUrl;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public String getTeamId() {
+        return teamId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

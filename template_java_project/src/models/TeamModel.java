@@ -30,6 +30,30 @@ public class TeamModel {
         this.dev4 = team.getDev4();
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDev1() {
+        return dev1;
+    }
+
+    public String getDev2() {
+        return dev2;
+    }
+
+    public String getDev3() {
+        return dev3;
+    }
+
+    public String getDev4() {
+        return dev4;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

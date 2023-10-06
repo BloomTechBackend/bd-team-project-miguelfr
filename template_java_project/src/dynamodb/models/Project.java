@@ -4,6 +4,8 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
+import java.util.Objects;
+
 @DynamoDBTable(tableName = "projects")
 public class Project {
     private String id;
@@ -85,5 +87,32 @@ public class Project {
 
     public void setTeamId(String teamId) {
         this.teamId = teamId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Project project = (Project) o;
+        return Objects.equals(id, project.id) && Objects.equals(title, project.title) && Objects.equals(description, project.description) && Objects.equals(course, project.course) && Objects.equals(gitUrl, project.gitUrl) && Objects.equals(websiteUrl, project.websiteUrl) && Objects.equals(year, project.year) && Objects.equals(teamId, project.teamId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, description, course, gitUrl, websiteUrl, year, teamId);
+    }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", course='" + course + '\'' +
+                ", gitUrl='" + gitUrl + '\'' +
+                ", websiteUrl='" + websiteUrl + '\'' +
+                ", year=" + year +
+                ", teamId='" + teamId + '\'' +
+                '}';
     }
 }
