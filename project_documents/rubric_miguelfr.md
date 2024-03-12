@@ -4,6 +4,7 @@
 
 *This captures the expectations that we have for your team during the unit.
 This is how we will evaluate whether you have demonstrated these expectations.*
+Create a full project with front and backend, using java lambda, dependecy injection, dynamodb, API Gateway and unit tests.
 
 ## Instructions
 
@@ -17,10 +18,10 @@ We want you to see the full set of expectations for transparency’s sake.*
 
 *Provide links to the following project deliverables:*
 
-|Deliverable                                                      |Due Date                  |Date Completed |URL                               |
-|---                                                              |---                       |---            |---                               |
-|Team name                                                        |Sprint 1 Module 1         |               |name:                             |
-|[Design Document - problem statement](design_document.md)        |Sprint 1 Module 2         |               |                                  |
+|Deliverable                                                               |Due Date                  |Date Completed |URL                               |
+|---                                                                       |---                       |---            |---                               |
+|Team name                                                                 |Sprint 1 Module 1         |               |name: MiguelFR                    |
+|[Design Document - problem statement](design_document_miguelfr.md)        |Sprint 1 Module 2         |               |https://github.com/BloomTechBackend/bd-team-project-miguelfr/blob/main/project_documents/design_document_miguelfr.md#1-problem-statement                                 |
 |[Team Charter](team_charter.md)                                  |Sprint 1 Module 3         |               |                                  |
 |[Design Document](design_document.md)                            |Sprint 1 REQUIRED TO GO ON|               |                                  |
 |Project Completion (Feature Complete)                            |Sprint 3                  |               |                                  |
