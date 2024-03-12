@@ -1,4 +1,4 @@
-# [Team Name] Project Rubric
+# MiguelFR Project Rubric
 
 ## Background
 
