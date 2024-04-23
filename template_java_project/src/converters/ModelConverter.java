@@ -32,12 +32,9 @@ public class ModelConverter {
         Project project = new Project();
         project.setId(projectModel.getId());
         project.setTitle(projectModel.getTitle());
-        project.setDescription(projectModel.getDescription());
-        project.setCourse(projectModel.getCourse());
-        project.setGitUrl(projectModel.getGitUrl());
+
         project.setYear(projectModel.getYear());
-        project.setTeamId(projectModel.getTeamId());
-        project.setWebsiteUrl(projectModel.getWebsiteUrl());
+
         return project;
     }
 
@@ -45,12 +42,10 @@ public class ModelConverter {
         ProjectModel projectModel = ProjectModel.builder()
                 .withId(project.getId())
         .withTitle(project.getTitle())
-        .withDescription(project.getDescription())
-                .withCourse(project.getCourse())
-                .withGitUrl(project.getGitUrl())
+
+
                 .withYear(project.getYear())
-                .withTeamId(project.getTeamId())
-                .withWebsiteUrl(project.getWebsiteUrl())
+
                 .build();
         return projectModel;
     }
