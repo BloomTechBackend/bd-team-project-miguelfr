@@ -20,19 +20,21 @@ public class CreateProjectRequest {
     private String dev3;
     private String dev4;
 
+    public CreateProjectRequest() {
+    }
 
-    private CreateProjectRequest(Builder builder) {
-        this.title = builder.title;
-        this.description = builder.description;
-        this.course = builder.course;
-        this.gitUrl = builder.gitUrl;
-        this.websiteUrl = builder.websiteUrl;
-        this.year = builder.year;
-        this.teamName = builder.teamName;
-        this.dev1 = builder.dev1;
-        this.dev2 = builder.dev2;
-        this.dev3 = builder.dev3;
-        this.dev4 = builder.dev4;
+    private CreateProjectRequest(String title, String description, String course, String gitUrl, String websiteUrl, Integer year, String teamName, String dev1, String dev2, String dev3, String dev4) {
+        this.title = title;
+        this.description = description;
+        this.course = course;
+        this.gitUrl = gitUrl;
+        this.websiteUrl = websiteUrl;
+        this.year = year;
+        this.teamName = teamName;
+        this.dev1 = dev1;
+        this.dev2 = dev2;
+        this.dev3 = dev3;
+        this.dev4 = dev4;
     }
 
     public String getTitle() {
@@ -79,6 +81,50 @@ public class CreateProjectRequest {
         return dev4;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public void setGitUrl(String gitUrl) {
+        this.gitUrl = gitUrl;
+    }
+
+    public void setWebsiteUrl(String websiteUrl) {
+        this.websiteUrl = websiteUrl;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public void setDev1(String dev1) {
+        this.dev1 = dev1;
+    }
+
+    public void setDev2(String dev2) {
+        this.dev2 = dev2;
+    }
+
+    public void setDev3(String dev3) {
+        this.dev3 = dev3;
+    }
+
+    public void setDev4(String dev4) {
+        this.dev4 = dev4;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -107,81 +153,5 @@ public class CreateProjectRequest {
                 ", dev3='" + dev3 + '\'' +
                 ", dev4='" + dev4 + '\'' +
                 '}';
-    }
-
-    public static Builder builder(){
-        return new Builder();
-    }
-    public static class Builder {
-        private String title;
-        private  String description;
-        private String course;
-        private String gitUrl;
-        private String websiteUrl;
-        private Integer year;
-        private String teamName;
-        private String dev1;
-        private String dev2;
-        private String dev3;
-        private String dev4;
-
-        public Builder withTitle(String title) {
-            this.title = title;
-            return this;
-        }
-
-        public Builder withDescription(String description) {
-            this.description = description;
-            return this;
-        }
-
-        public Builder withCourse(String course) {
-            this.course = course;
-            return this;
-        }
-
-        public Builder withGitUrl(String gitUrl) {
-            this.gitUrl = gitUrl;
-            return this;
-        }
-
-        public Builder withWebsiteUrl(String websiteUrl) {
-            this.websiteUrl = websiteUrl;
-            return this;
-        }
-
-        public Builder withYear(Integer year) {
-            this.year = year;
-            return this;
-        }
-
-        public Builder withTeamName(String teamName) {
-            this.teamName = teamName;
-            return this;
-        }
-
-        public Builder withDev1(String dev1) {
-            this.dev1 = dev1;
-            return this;
-        }
-
-        public Builder withDev2(String dev2) {
-            this.dev2 = dev2;
-            return this;
-        }
-
-        public Builder withDev3(String dev3) {
-            this.dev3 = dev3;
-            return this;
-        }
-
-        public Builder withDev4(String dev4) {
-            this.dev4 = dev4;
-            return this;
-        }
-
-        public CreateProjectRequest build() {
-            return new CreateProjectRequest(this);
-        }
     }
 }

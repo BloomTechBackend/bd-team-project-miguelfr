@@ -24,33 +24,32 @@ public class CreateProjectActivityTest {
     private TeamDao teamDao;
     @Mock
     private ProjectDao projectDao;
+    CreateProjectRequest request;
 
     CreateProjectActivity createProjectActivity;
 
     @BeforeEach
-    private void setUp() {
+    public void setUp() {
         initMocks(this);
         createProjectActivity = new CreateProjectActivity(teamDao,projectDao);
-
+        request = new CreateProjectRequest();
+        request.setCourse("Backend");
+        request.setDescription("LBC projects Test1");
+        request.setDev1("Miguel Francisco");
+        request.setDev2("Fernando");
+        request.setDev3("Descriptor");
+        request.setDev4("Lino");
+        request.setGitUrl("https://github.com/BloomTechBackend/bd-team-project-miguelfr/tree/main");
+        request.setTitle("LBC projects database");
+        request.setWebsiteUrl("");
+        request.setTeamName("MiguelFR");
+        request.setYear(2024);
     }
 
     @Test
     void handleRequest_validRequest_saveTheProject() {
         //Given
-        String description = "LBC projects database is a website where students can check the previous LBC projects so then can be more inspired for their own project ideas";
-        CreateProjectRequest request = CreateProjectRequest.builder()
-                .withCourse("Backend")
-                .withDescription(description)
-                .withDev1("Miguel Francisco")
-                .withDev2("")
-                .withDev3("")
-                .withDev4("")
-                .withGitUrl("https://github.com/BloomTechBackend/bd-team-project-miguelfr/tree/main")
-                .withTitle("LBC projects database")
-                .withWebsiteUrl("")
-                .withTeamName("MiguelFR")
-                .withYear(2023)
-                .build();
+        String description = request.getDescription();
 
         //When
         CreateProjectResult createProjectResult = createProjectActivity.handleRequest(request, null);

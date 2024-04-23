@@ -25,7 +25,6 @@ public class CreateProjectActivity implements RequestHandler<CreateProjectReques
         this.projectDao = projectDao;
     }
 
-
     @Override
     public CreateProjectResult handleRequest(CreateProjectRequest request, Context context) {
         TeamModel teamModel = TeamModel.builder()
