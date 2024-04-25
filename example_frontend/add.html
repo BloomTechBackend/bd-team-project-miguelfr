@@ -7,51 +7,54 @@
     <title>LBC Projects Repository</title>
   </head>
   <body>
+    <div class="main">
     <h2>My Playlists</h2>
-      <ul id="playlists">
-      </ul>
+    
     <h2>New Project</h2>
-    <form class="card-content" id="create-project-form">
-      <p>
-      <label>Title
-        <input type="text" required class="validated-field" id="title" autofocus>
-      </label>
-      
-      <label>Description
-        <input type="text" class="validated-field" id="description" data-tip="What is the porpuso of the project?" autofocus>
-      </label>
-      </p>
-      <p></p>
-      <label>Course
-        <input type="text" required class="validated-field" id="course" placeholder="BackEnd" data-tip="BackEnd, FullStack, DataScience" autofocus>
-      </label>
-      <label>Git Url
-        <input type="text"  class="validated-field" id="gitUrl" placeholder="https://github.com/BloomTechBackend/bd-team-project-miguelfr" autofocus>
-      </label>
-      </p>
-      <label>Website Url
-        <input type="text"  class="validated-field" id="websiteUrl" placeholder="https://github.com/BloomTechBackend/bd-team-project-miguelfr" autofocus>
-      </label>
-      <label>Year
-        <input type="text" required class="validated-field" id="year" placeholder="2024" data-tip="The year that the project was finished" autofocus>
-      </label>
-      <label>Team Name
-        <input type="text" required class="validated-field" id="teamName" placeholder="Team A"  autofocus>
-      </label>
-      <label>Developer 1
-        <input type="text" required class="validated-field" id="dev1" placeholder="Miguel" data-tip="Team member name" autofocus>
-      </label>
-      <label>Developer 2
-        <input type="text"  class="validated-field" id="dev2" placeholder="Miguel" data-tip="Team member name" autofocus>
-      </label>
-      <label>Developer 3
-        <input type="text"  class="validated-field" id="dev3" placeholder="Miguel" data-tip="Team member name" autofocus>
-      </label>
-      <label>Developer 4
-        <input type="text"  class="validated-field" id="dev4" placeholder="Miguel" data-tip="Team member name" autofocus>
-      </label>
+    <form id="create-project-form">
      
-      <input type="submit" id="create" value="Create">
+        <table>
+          <tr>
+            <th>Title</th>
+            <td> <input type="text" required class="validated-field" id="title" autofocus></td>
+            <th>Description</th>
+            <td> <input type="text" class="validated-field" id="description" data-tip="What is the porpuso of the project?" autofocus></td>
+          </tr>
+          <tr>
+            <th>Course</th>
+            <td> <input type="text" required class="validated-field" id="course" placeholder="BackEnd" data-tip="BackEnd, FullStack, DataScience" autofocus></td>
+          
+            <th>Git Url</th>
+            <td><input type="text"  class="validated-field" id="gitUrl" placeholder="https://github.com/BloomTechBackend/bd-team-project-miguelfr" autofocus> </td>
+          </tr>
+          <tr>  
+            <th>Website Url</th>
+            <td> <input type="text"  class="validated-field" id="websiteUrl" placeholder="https://github.com/BloomTechBackend/bd-team-project-miguelfr" autofocus></td>
+            <th>Year</th>
+            <td> <input type="text" required class="validated-field" id="year" placeholder="2024" data-tip="The year that the project was finished" autofocus></td>       
+          </tr>
+          <tr>
+            <th>Team Name</th>
+            <td> <input type="text" required class="validated-field" id="teamName" placeholder="Team A"  autofocus></td>
+            <th>Developer 1</th>
+            <td> <input type="text" required class="validated-field" id="dev1" placeholder="Miguel" data-tip="Team member name" autofocus></td>
+          </tr>
+          <tr>  
+            <th>Developer 2</th>
+            <td> <input type="text"  class="validated-field" id="dev2" placeholder="Miguel" data-tip="Team member name" autofocus></td>
+            <th>Developer 3</th>
+            <td> <input type="text"  class="validated-field" id="dev3" placeholder="Miguel" data-tip="Team member name" autofocus></td>
+          </tr>
+          <tr>  
+            <th>Developer 4</th>
+            <td> <input type="text"  class="validated-field" id="dev4" placeholder="Miguel" data-tip="Team member name" autofocus></td>
+          </tr>
+        
+        </table>
+      
+     
+      <input type="submit" value="Create">
     </form>
+  </div>
   </body>
 </html>

@@ -1,10 +1,8 @@
 const projectForm = document.querySelector("#create-project-form");
-const playlistsList = document.querySelector("#playlists");
+//const playlistsList = document.querySelector("#playlists");
 
 projectForm.onsubmit = async function(evt) {
   evt.preventDefault();
-  //const name = document.querySelector("#title").value;
-  //const customerId = "testCustomer";
   const projectRequest = {
     "title": document.querySelector("#title").value,
     "description": document.querySelector("#description").value,
@@ -21,8 +19,12 @@ projectForm.onsubmit = async function(evt) {
   axios.post("https://62xhyw6tad.execute-api.us-west-2.amazonaws.com/dev/projects", projectRequest)
   .then((res) => {
     console.log(res);
-    window.location.reload();
+    //window.location.reload();
+    window.location.href = '/list.html';
   })
+  .catch(error => {
+    console.error('Error', error);
+  });
 }
 
 

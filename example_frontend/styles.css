@@ -1,5 +1,6 @@
 table {
   border-collapse: collapse;
+  
 }
 
 table, th, td {
@@ -12,4 +13,10 @@ th {
 
 th, td {
   padding: 6px;
+}
+
+.main {
+  margin: 0 auto;
+  width: 35%;
+  text-align: center;
 }

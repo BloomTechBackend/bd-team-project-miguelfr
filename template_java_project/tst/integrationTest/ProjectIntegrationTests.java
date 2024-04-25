@@ -52,4 +52,9 @@ public class ProjectIntegrationTests {
         assertEquals(request.getDescription(),createProjectResult.getProjectModel().getDescription());
 
     }
+
+    @Test
+    void getAllProjects() {
+
+    }
 }
