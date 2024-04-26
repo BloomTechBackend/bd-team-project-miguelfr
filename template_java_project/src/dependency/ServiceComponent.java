@@ -2,6 +2,7 @@ package dependency;
 
 import activity.CreateProjectActivity;
 import activity.GetAllProjectsActivity;
+import activity.GetProjectActivity;
 import dagger.Component;
 
 import javax.inject.Singleton;
@@ -11,4 +12,5 @@ import javax.inject.Singleton;
 public interface ServiceComponent {
     CreateProjectActivity provideCreateProjectActivity();
     GetAllProjectsActivity provideGetAllProjectsActivity();
+    GetProjectActivity  provideGetProjectActivity();
 }
