@@ -37,4 +37,4 @@ underway?
 
 * If you were to start this unit over again, what would you do differently? How
   do you see yourself applying that to your work in later units, the capstone,
-  or your internship?
+  or your internship? R: In a situation that I don't have experience of the technologies, I would focus on implementing the easiest functionality from begining to end and then implement the others.
