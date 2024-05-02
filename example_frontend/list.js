@@ -4,8 +4,8 @@ const playlistsList = document.querySelector("#playlists");
 window.onload = async function(evt) {
   evt.preventDefault();
   console.log("Getting All Projects...");
-  axios.get("https://62xhyw6tad.execute-api.us-west-2.amazonaws.com/dev/projects", {
-  }).then((res) => {
+  axios.get("https://62xhyw6tad.execute-api.us-west-2.amazonaws.com/dev/projects")
+  .then((res) => {
     console.log(res.data);
     populateProjectList(res.data.teamList,res.data.projectList);
   })

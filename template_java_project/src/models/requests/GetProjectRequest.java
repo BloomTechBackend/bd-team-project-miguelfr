@@ -6,11 +6,11 @@ public class GetProjectRequest {
 
     private String id;
 
-    public GetProjectRequest(String id) {
-        this.id = id;
-    }
-
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

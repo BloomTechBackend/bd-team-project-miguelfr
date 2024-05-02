@@ -3,8 +3,8 @@
     <meta name="viewport content="width=device-width, initial-scale="1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="add.js" defer></script>
-    <title>New Project</title>
+    <script src="update.js" defer></script>
+    <title>Update Project</title>
   </head>
   <body>
     <div>
@@ -15,7 +15,7 @@
       <a href="/home.html"><h2>BloomTech LBC Projects Repository MiguelFr</h2> </a>
       
     <h2>New Project</h2>
-    <form id="create-project-form">
+    <form id="update-project-form">
      
         <table>
           <tr>
@@ -52,12 +52,14 @@
           <tr>  
             <th>Developer 4</th>
             <td> <input type="text"  class="validated-field" id="dev4" placeholder="Miguel" data-tip="Team member name" autofocus></td>
+            <th>Project ID</th>
+            <td> <input type="text"  class="validated-field" id="project-id"  autofocus></td>
           </tr>
         
         </table>
       
      
-      <input type="submit" value="Create">
+      <input type="submit" value="Update">
     </form>
   </div>
   </body>
